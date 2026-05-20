@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, Download, Github, Linkedin, ExternalLink, ArrowUpRight } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
+import { link } from "fs";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -43,6 +44,13 @@ const projects = [
     desc: "Real-time ambulance tracking with live location updates and efficient assignment for emergency response.",
     stack: ["React Native (Expo)", "Node.js", "Express.js", "Socket.IO", "MongoDB Atlas"],
     link: "https://github.com/saran-5/GPS-tracking-system-for-ambulance",
+  },
+  {
+  name: "SpendWise",
+  year: "2026",
+  desc: "A smart expense and rent tracking mobile application built with React Native and Expo. Features include income & expense management, rent tracking, calendar-based transaction history, financial summaries, filters, edit/delete transactions, and a clean modern UI.",
+  stack: ["React Native", "Expo", "AsyncStorage", "JavaScript"],
+  link: "https://github.com/saran-5/spendwise",
   },
   {
     name: "Smart Public Grievance System",
